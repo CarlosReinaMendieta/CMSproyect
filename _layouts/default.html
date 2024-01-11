@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+{% include head.html %}
 
-  {% include head.html %}
+<body>
 
-  <body>
+	 <div class="main-body">	
+	    <div class="container">
+	        <div class="row">               
+	            <div class="main-page">
+	            {% include /navigation.html %}
+				{{content}}
+				
+				{% include footer.html %}
+	    		</div> 
+			</div> 
+		</div> 
+	</div> 
 
-    <main class="wrapper">
-      
-      {% include header.html %}
+ 
+{% include scripts.html %}
+</body>
+</html> 
 
-      <div class="container">
-        {{ content }}
 
-        {% include footer.html %}
-      </div>
+   
     
-    </main>
 
-    {% include scripts.html %}
-    
-  </body>
-
-</html>
