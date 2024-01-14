@@ -1,13 +1,13 @@
 
 title: My Resume # your title
 url: 'http://junlulocky.com'
-baseurl: '/online-cv' #change it according to your repository name
+baseurl: '/ProyectoCMS' #change it according to your repository name
 
 
 
 # Profile information
-yourname: Brown Smith  ## put your name
-location: San Francisco , CA
+yourname: Carlos Reina Mendieta  ## put your name
+location: Alcalá de Henares, Madrid
 
 
 ## Social Profiles
