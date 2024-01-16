@@ -621,6 +621,14 @@ body {
 	text-transform: uppercase;
 }
 
+.imagen-info {
+    display: none;
+}
+
+.imagen-info:target {
+    display: block;
+}
+
 .view_more_main {
 	width: 100%;
 	margin: 15px 0px;

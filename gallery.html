@@ -17,7 +17,12 @@ layout: gallery
             <div class="box-gutter"></div>
             <div class="box-sizer"></div>
             <div class="box">
-                <img alt="Agra picture 1" src="assets/images/gallery-item-1.jpg" onclick="mostrarInfo('Agra picture 1', 'Descripción de la imagen 1')">
+            <a href="#imagen-1-info">
+                    <img alt="Agra picture" src="assets/images/gallery-item-1.jpg"></a>
+            </div>
+            <div id="imagen-1-info" class="imagen-info">
+                <h2>Información sobre la imagen 1</h2>
+                <p>Descripción detallada de la imagen 1.</p>
             </div>
             <div class="box">
                 <img alt="Agra picture" src="assets/images/gallery-item-4.jpg"></a>
@@ -40,10 +45,6 @@ layout: gallery
             <div class="box">
                 <img alt="Agra picture" src="assets/images/gallery-item-3.jpg"></a>
             </div>
-            <div id="info" style="display: none;">
-                <h2 id="info-title"></h2>
-                <p id="info-description"></p>
-            </div>
         </div>                
         <div class="row text-center view_more_main">
             <a href="fauna.html" class="btn view_more">Fauna</a>
@@ -54,18 +55,6 @@ layout: gallery
          <div class="row text-center view_more_main">
             <a href="#" class="btn view_more">Paisajes</a>
          </div>
-         <script>
-            function mostrarInfo(titulo, descripcion) {
-                var info = document.getElementById("info");
-                var title = document.getElementById("info-title");
-                var description = document.getElementById("info-description");
-    
-                title.innerHTML = titulo;
-                description.innerHTML = descripcion;
-    
-                info.style.display = (info.style.display === "block") ? "none" : "block";
-            }
-        </script>
     </div>
 
 </div>
