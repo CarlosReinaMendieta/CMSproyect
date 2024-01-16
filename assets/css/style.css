@@ -633,12 +633,14 @@ body {
     padding: 20px;
     box-sizing: border-box;
     opacity: 0;
+    pointer-events: none;
     transition: opacity 0.3s;
   }
 
-  .imagen-info:target {
+  :target .imagen-info {
     opacity: 1;
   }
+
 
 .view_more_main {
 	width: 100%;
