@@ -16,8 +16,8 @@ layout: gallery
         <div id="content" class="gallery-images-container">
             <div class="box-gutter"></div>
             <div class="box-sizer"></div>
-            <div class="box">
-                <img alt="Agra picture" src="assets/images/gallery-item-1.jpg"></a>
+            <div class="box" onclick="mostrarInfo('Agra picture 1', 'Descripción de la imagen 1')">
+                <img alt="Agra picture 1" src="assets/images/gallery-item-1.jpg">
             </div>
             <div class="box">
                 <img alt="Agra picture" src="assets/images/gallery-item-4.jpg"></a>
@@ -50,6 +50,18 @@ layout: gallery
          <div class="row text-center view_more_main">
             <a href="#" class="btn view_more">Paisajes</a>
          </div>
+         <script>
+            function mostrarInfo(titulo, descripcion) {
+                var info = document.getElementById("info");
+                var title = document.getElementById("info-title");
+                var description = document.getElementById("info-description");
+    
+                title.innerHTML = titulo;
+                description.innerHTML = descripcion;
+    
+                info.style.display = (info.style.display === "block") ? "none" : "block";
+            }
+        </script>
     </div>
 
 </div>
