@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tus comentarios</title>
+
+    <style>
+        body {
+            background-image: url('assets/images/page-bg.jpg'); /* Ruta a tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #formulario {
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco hueso con opacidad */
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 600px; /* Ancho máximo del formulario */
+            width: 100%;
+        }
+
+        select {
+            margin-bottom: 15px;
+            width: 50%; /* Hacer el select más pequeño */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        input {
+            margin-bottom: 15px;
+            width: 100%; /* Hacer el input de texto más grande */
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50; /* Color verde para el botón */
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Cambio de color al pasar el ratón sobre el botón */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="formulario">
+        <h2>Déjanos tus reseñas</h2>
+        <form action="#" method="post">
+            <label for="opciones">¿Sobre que post quieres hacer un comentario?</label>
+            <hr><select id="opciones" name="opciones">
+                <option value="opcion1">Londres es pura magia, Francisco Duarte</option>
+                <option value="opcion2">Osos finlandeses, Nuria Sanchez</option>
+                <option value="opcion3">Linces, los más protegidos, Alex García</option>
+                <option value="opcion4">Águilas y su mejor hábitat, Raúl Jimenez</option>
+                <option value="opcion5">Safari total, Daniel Carvajal</option>
+                <option value="opcion6">No mas cocodrilos, Miguel Gutierrez</option>
+                <option value="opcion7">Un paseo en barca, Unai Simón</option>
+                <option value="opcion8">Templo nevado, Manolo Lama</option>
+                <option value="opcion9">El cénote más bonito, Joselu Mato</option>
+                <option value="opcion10">Campos de primavera, Lucas Vazquez</option>
+            </select>
+            <br>
+            <label for="texto">Cuéntanos</label>
+            <br><hr>
+            <input type="text" id="texto" name="texto">
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetear</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
