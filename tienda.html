@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tienda de Arte</title>
+    <style>
+
+body {
+    background-image: url('assets/images/page-bg.jpg');
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+section.product {
+    text-align: center;
+    margin: 20px;
+}
+
+section.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tienda de Arte</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="gallery.html">Galería</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="about.html">Acerca de mí</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product">
+        <img src="imagen_producto.jpg" alt="Producto 1">
+        <h2>Nombre del Producto</h2>
+        <p class="price">$50.00</p>
+        <p class="description">Descripción del producto. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button>Añadir al carrito</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Carlos Reina Mendieta</p>
+    </footer>
+</body>
+</html>
