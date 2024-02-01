@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistas</title>
+
+    <style>
+        body {
+            background-image: url('assets/images/page-bg.jpg'); /* Ruta a tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .artist-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .artist-card {
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco hueso con opacidad */
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 300px; /* Ancho máximo de la tarjeta del artista */
+            width: 100%;
+            margin: 10px;
+        }
+
+        .artist-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #4caf50; /* Color verde para el botón */
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Cambio de color al pasar el ratón sobre el botón */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="artist-container">
+        <div class="artist-card">
+            <img src="ruta_artista1.jpg" alt="Artista 1">
+            <h2>Artista 1</h2>
+            <p>Descripción del Artista 1.</p>
+            <button>Ver Comentarios</button>
+        </div>
+
+        <div class="artist-card">
+            <img src="ruta_artista2.jpg" alt="Artista 2">
+            <h2>Artista 2</h2>
+            <p>Descripción del Artista 2.</p>
+            <button>Ver Comentarios</button>
+        </div>
+
+        <div class="artist-card">
+            <img src="ruta_artista3.jpg" alt="Artista 3">
+            <h2>Artista 3</h2>
+            <p>Descripción del Artista 3.</p>
+            <button>Ver Comentarios</button>
+        </div>
+
+        <div class="artist-card">
+            <img src="ruta_artista4.jpg" alt="Artista 4">
+            <h2>Artista 4</h2>
+            <p>Descripción del Artista 4.</p>
+            <button>Ver Comentarios</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
