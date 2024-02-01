@@ -62,11 +62,49 @@
             text-decoration: none; /* Quitar subrayado del enlace */
             color: inherit; /* Heredar el color del texto del contenedor */
         }
+        header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+        }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+        }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s ease-in-out;
+        }
+
+    nav a:hover {
+        color: #4CAF50;
+        }
     </style>
 </head>
 
 <body>
-
+    <header>
+        <h1>Tienda de Arte</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="gallery.html">Galería</a></li>
+                <li><a href="posts.html">Posts</a></li>
+                <li><a href="about.html">Acerca de mí</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="artist-container">
         <div class="artist-card">
             <img src="assets/images/artista1.jpg" alt="Artista 1">
